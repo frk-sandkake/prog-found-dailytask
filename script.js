@@ -39,6 +39,7 @@ var five = 5;
 var sumOfVariables = four + five;
 console.log(sumOfVariables);
 console.log(typeof (sumOfVariables));
+// From lecture 05.01.22
 // light is on = false
 var lightIsOn = false;
 console.log(lightIsOn);
@@ -52,17 +53,7 @@ var inputIsValid = false;
 if (inputIsValid === false) {
     alert("please fill in the email field");
 }
-
-var myAge = 29;
-if (myAge > 30) {
-    console.log("I am too old with white hair");
-}
-else if (myAge === 29) {
-    console.log("I still have a year of fun");
-}
-
 var color = "red";
-
 switch (color) {
     case "red":
         console.log("the chosen color is red");
@@ -72,4 +63,25 @@ switch (color) {
         break;
     default:
         console.log("the color is not blue, green, red...");
+}
+// Declare and initialize age 10
+var age = 10;
+console.log(age);
+if (age >= 7) {
+    console.log("Greater than or equal to 7");
+}
+else if (age < 7) {
+    console.log("Less than 7");
+}
+// if-else-if-if statement cat, parrot
+var animal = "cat";
+console.log(animal);
+if (animal === "parrot") {
+    console.log("The animal has two legs");
+}
+else if (animal === "cat") {
+    console.log("The animal has four legs");
+}
+else if (animal !== "cat" + "parrot") {
+    console.log("The animal has an unknown amount of legs");
 }

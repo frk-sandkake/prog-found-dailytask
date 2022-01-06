@@ -23,3 +23,7 @@ Check if animal is equal to “parrot”. If it is, console log the string “Th
 
 Check if animal is equal to “cat”. If it is, console log the string “The animal has four legs”.
 If animal is neither “parrot” nor “cat”, console log the string “The animal has an unknown amount of legs”. Check your code by changing the value of the animal variable.
+
+Write a for loop that logs a number from 1 to 5
+Write a for loop that logs a number from 7 to 16
+Given this array var animals = [“dog”, “cat”, “frog”]; use a for loop to console log each animal in the array.

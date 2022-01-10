@@ -159,7 +159,7 @@ for (var i = 0; i < numberOfAnimals; i++) {
 }*/
 
 // Daily tasks 2:1
-// Comparison equals equally operator strict === and not strict ==
+// Comparison equals equally operator strict === and loose ==
 var stringSix = "6";
 var numberSix = 6;
 
@@ -220,3 +220,48 @@ var people = [{
 for (var i = 0; i < people.length; i++) {
     console.log(people[i].name); // Thea / Patrik
 }
+// Lesson 10.01.22
+var selectedNumber = 30;
+if (selectedNumber >= 10 && selectedNumber <= 50) {
+    console.log("the selected numbers are in range");
+}
+var dayOfTheWeek = "Saturday";
+if (dayOfTheWeek === "Saturday" || dayOfTheWeek === "Sunday") {
+    console.log("This is weekend yay!");
+}
+if (true && true) {
+    console.log("here");
+}
+if (true || false) {
+    console.log("here 2");
+}
+var someBanana;
+console.log(someBanana);
+console.log(typeof someBanana);
+
+if (someBanana === undefined) {
+    console.log("aw man no data!");
+}
+var someBanana = null;
+console.log(someBanana);
+console.log(typeof someBanana);
+
+if (someBanana === null) {
+    console.log("aw man still no data!");
+}
+
+var someArray = ["cat", "dog", "bird", "sloth"];
+console.log(someArray);
+console.log(someArray.length);
+
+someArray.push("horse"); // adds as next item in array
+console.log(someArray);
+someArray.pop(); // removes last item in array
+console.log(someArray);
+someArray.unshift("horse"); // adds as first item in array
+console.log(someArray);
+someArray.shift(); // removes first item in array
+console.log(someArray);
+delete someArray[0]; // deletes first item in array, but leaves any empty spot
+console.log(someArray);
+

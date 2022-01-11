@@ -264,4 +264,47 @@ someArray.shift(); // removes first item in array
 console.log(someArray);
 delete someArray[0]; // deletes first item in array, but leaves any empty spot
 console.log(someArray);
+// Lesson 11.01.22
+var planets = [
+    "earth",
+    "mars",
+    ["Hesh", "Magnus", "Lisa"],
+    ["Volvo", "Polo", "BMW"]
+];
+console.log(planets[0]);
+console.log(planets[1]);
+console.log(planets[2][0]);
+console.log(planets[2][1]);
 
+var dog = {
+    name: "Milo",
+    breed: "labrador",
+    playfulScale: 9
+};
+console.log(dog.name);
+console.log(dog.breed);
+console.log(dog.playfulScale);
+
+var dogs = [{
+    name: "Milo",
+    breed: "labrador",
+    playfulScale: 9
+}, {
+    name: "Calvin",
+    breed: "German Shepard",
+    playfulScale: 6
+}, {
+    name: "Sophia",
+    breed: "boxer",
+    playfulScale: 7
+}];
+console.log(dogs);
+for (var i = 0; i < dogs.length; i++) {
+    console.log(dogs[i].name);
+}
+
+var postItem = [{
+    imageUrl: "/path/to/bee-picture",
+    likeCounter: 80,
+    likedByUser: true
+}];

@@ -156,7 +156,8 @@ console.log(numberOfAnimals);
 console.log(typeof (numberOfAnimals));
 for (var i = 0; i < numberOfAnimals; i++) {
     console.log(animals[i]);
-}*/
+}
+
 
 // Daily tasks 2:1
 // Comparison equals equally operator strict === and loose ==
@@ -308,3 +309,184 @@ var postItem = [{
     likeCounter: 80,
     likedByUser: true
 }];
+*/
+// Lesson 12.01.22
+function logWord() {
+    console.log("Hello World");
+}
+
+logWord();
+
+function logWords(theWord) {
+    console.log(theWord);
+}
+
+logWords("Linda");
+
+function logTwoWords(name, age) {
+    console.log("My name is ", name, " and I'm ", age, " years old");
+}
+
+logTwoWords("Linda", 39);
+
+function getNumberOfLikes(numberOfLikes) {
+    return numberOfLikes + " Likes";
+}
+var totalNumberOfLikes = getNumberOfLikes(40);
+console.log(totalNumberOfLikes);
+
+// Addition with return
+function getSum(firstNumber, secondNumber) {
+    return (firstNumber + secondNumber);
+}
+var totalSum = getSum(10, 20);
+console.log(totalSum);
+
+// Multiplication with console.log
+function getSum1(num1, num2) {
+    console.log(num1 * num2);
+}
+getSum1(10, 20);
+
+// Get name with console.log
+function getName(firstName, lastName) {
+    console.log(firstName + " " + lastName);
+}
+getName("Linda", "Sandaker");
+
+
+// Get name with return
+function getName1(fName, lName) {
+    return (fName + " " + lName);
+}
+var fullName = getName1("Linda", "Sandaker");
+console.log(fullName);
+
+// Lesson 13.01.22
+// Create a function with variable
+var square = function (number) { // => is arrow function, it replaces function
+    return number * number;
+};
+var x = square(10);
+console.log(x);
+
+// toString() convert number to string
+var x = 123;
+var y = x.toString();
+console.log(x);
+
+(123).toString();
+(100 + 23).toString();
+
+var y = 1992;
+console.log("Some message", y);
+
+var x = y.toString();
+console.log("some message", x);
+
+var someNumber = 2022;
+var someText = someNumber.toString();
+console.log("some message", someText); // some message (string) 2022
+console.log("some message", someNumber); // some message (number) 2022
+console.log("some message " + someNumber); // some message (string) 2022 because + joins strings
+
+// Number() convert string to numbers
+var someString = "Linda";
+var someNumber = Number(someString);
+console.log(someString);
+console.log(someNumber);
+
+var age = "30";
+var x = Number(age);
+console.log(x);
+
+// sort() sorts the array
+const fruits = ["Banana", "Orange", "Mango", "Apple"];
+fruits.sort();
+fruits.reverse();
+console.log(fruits);
+
+const points = [40, 100, 1, 5, 25, 10];
+const sortedPoints = points.sort(function (a, b) { return a - b; });
+console.log(sortedPoints);
+
+// Daily tasks 2:4
+function printName(name) {
+    console.log(name);
+}
+printName("Linda");
+
+function returnName(name) {
+    return ("Hello" + " " + name);
+}
+var helloName = returnName("Linda");
+console.log(helloName);
+
+// Questions from Hesh: 01JS
+// Number 1:
+// Create an empty user object.
+// Add the name property with the value Hesh.
+// Add property surname with value Peter.
+// Change name to Sokki.
+// Remove the name property from the object.
+var user = {};
+Object.assign(user, { name: "Hesh" });
+console.log(user);
+Object.assign(user, { surname: "Peter" });
+console.log(user);
+Object.assign(user, { name: "Sokki" });
+console.log(user);
+delete user.name;
+console.log(user);
+
+var user1 = {
+    name: "",
+    surname: "",
+};
+user1.name = "Hesh";
+console.log(user1);
+user1.surname = "Peter";
+console.log(user1);
+user1.name = "Sokki";
+console.log(user1);
+delete user1.name;
+console.log(user1);
+
+// Number 2:
+// Create an isEmpty(obj) function that returns true if the
+// object has no properties and false if there is
+// at least one property.
+var someObject = {};
+
+var someObject1 = {
+    name: "Linda",
+};
+
+function isEmpty(obj) {
+    for (var key in obj) {
+        return false;
+    }
+    return true;
+}
+
+console.log(isEmpty(someObject1));
+
+// Number 3:
+// Given an array of numbers: [1,2,31,24,-67,5,3,555,79,-4,21,33,89,-90].
+// 1) Find the maximum and minimum value of the array.
+var arr = [1, 2, 31, 24, -67, 5, 3, 555, 79, -4, 21, 33, 89, -90];
+console.log(arr);
+
+function compareNumeric(a, b) {
+    return a - b;
+}
+var tempArr = arr.sort(compareNumeric);
+console.log(tempArr);
+var minValue = tempArr[0];
+console.log(minValue);
+var maxValue = tempArr[tempArr.length - 1];
+console.log(maxValue);
+
+document.write(
+    "My max value is " + maxValue + " and my min value is " + minValue
+);
